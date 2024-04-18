@@ -6,7 +6,11 @@ const initialGameBoard = [
     [null, null, null],
 ];
 
-export default function GameBoard({onselectsquare, activePlayerSymbol}) {
+export default function GameBoard({onselectsquare, activePlayerSymbol, turns}) {
+    let game_board = initialGameBoard;
+
+    for ()
+
     const [gameBoard, setGameBoard] = useState(initialGameBoard);
 
     function handleSelectSquare(rowIndex, colIndex) {
