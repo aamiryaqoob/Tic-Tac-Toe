@@ -81,7 +81,7 @@ function App() {
           <Player initialName="Player 1" symbol="X" isActive={activePlayer === 'X'} />
           <Player initialName="Player 2" symbol="O" isActive={activePlayer === 'O'} />
         </ol>{winner || hasDraw && <GameOver winner={winner} />}
-        <GameBoard onselectsquare={handleSelectSquare} board={game_board} />
+        <GameBoard turns={gameTurns}  onselectsquare={handleSelectSquare} board={game_board} />
       </div>
       <Log turns={turnGame} restart= {handleRestart} />
     </main>
