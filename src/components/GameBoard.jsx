@@ -3,8 +3,9 @@ import { useState } from "react";
 
 
 export default function GameBoard({onselectsquare, turns, board}) {
-    
+
     let game_board = initialGameBoard;
+    
 
     // const [gameBoard, setGameBoard] = useState(initialGameBoard);
 
