@@ -16,8 +16,8 @@ function App() {
 
       let currentPlayer = "X";
 
-      if (prevTuens.length > 0 && prevTuens[0].player === 'X') {
-        currentPlayer === 'O';
+      if (prevTuens.length > 0 && prevTuens[0].player === "X") {
+        currentPlayer === "O";
       }
 
       const updatedTurns = [{ square: { row: rowIndex, col: coIndex }, player: currentPlayer }, ...prevTuens]
