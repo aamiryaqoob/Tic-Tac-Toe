@@ -22,7 +22,7 @@ function App() {
 
       const updatedTurns = [{ square: { row: rowIndex, col: coIndex }, player: currentPlayer }, ...prevTuens]
       return updatedTurns;
-    })
+    });
 
   }
 
