@@ -8,7 +8,7 @@ const initialGameBoard = [
 ];
 
 
-export default function GameBoard({ onSelectSquare, onSelectSquare }) {
+export default function GameBoard({ onSelectSquare }) {
 
     const [gameBoard, setGameBoard] = useState(initialGameBoard);
 
