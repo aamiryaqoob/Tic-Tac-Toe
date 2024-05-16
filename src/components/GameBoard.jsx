@@ -40,6 +40,6 @@ export default function GameBoard({ onSelectSquare, turns }) {
                 </ol>
             </li>)}
         </ol>
-        
+
     )
 }
