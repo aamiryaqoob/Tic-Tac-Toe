@@ -47,6 +47,8 @@ export default function App() {
 
   }
 
+  const hasDraw = gameTurns.length === 9 && !Winner;
+
   function handleSelectSquare(rowIndex, colIndex) {
     setGameTurns(prevTurns => {
       const currentPlayer = deriveActivePlayer(prevTurns);
@@ -62,7 +64,7 @@ export default function App() {
           <Player initialName='Player 1' symbol='X' isActive={activePlayer === 'X'} />
           <Player initialName='Player 2' symbol='O' isActive={activePlayer === 'O'} />
         </ol>
-        {Winner && <GameOver winner={Winner} />}
+        {(Winner || hasDraw) && <GameOver winner={Winner} />}
         <GameBoard onSelectSquare={handleSelectSquare} board={gameBoard} />
       </div>
       <Log turns={gameTurns} />
