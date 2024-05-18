@@ -22,7 +22,6 @@ function deriveActivePlayer(gameTurns) {
 
 export default function App() {
   const [gameTurns, setGameTurns] = useState([]);
-  // const [activePlayer, setActivePlayer] = useState('X');
 
   const activePlayer = deriveActivePlayer(gameTurns);
 
